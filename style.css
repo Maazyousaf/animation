@@ -1,0 +1,302 @@
+*{
+margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+}
+.container{
+    width:100%;
+    padding: 10px;
+    border:1px  solid;
+    position: relative;
+    
+    }
+    .nav{
+        width:100%;
+        height:20vh;
+        text-transform: uppercase;
+    }
+    .nav h1{
+        text-align: center;
+        margin: 2% 0;
+        font-size: 45px;
+        animation-name:h1;
+        animation-duration: 5s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+        position: relative;
+        opacity: 0;
+        /* /transition-property: all;
+        transition-duration: 3s; */
+    }
+    @keyframes h1{
+        from{top:-200px;}
+        to{top:0px;opacity: 1;}
+    }
+    .nav ul{
+        width: 60%;
+        position:relative;
+        left: 25%;
+        top: 25%;
+    }
+    .nav ul li{
+        float: left;
+        margin-left: 7%;
+        font-size: 22px;
+        animation-name:ul;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        position: relative;
+        opacity: 0;
+        /* /transition-property: all;
+        transition-duration: 3s; */
+    }
+    @keyframes ul{
+        from{top:-200px;}
+        to{top:0px;opacity: 1;}
+    }
+    .clear{
+        clear:both;
+    }
+    .nav ul li:hover{
+        transform: scale(1.5);
+        transition-duration: 2s;
+    }
+    .foodimg{
+        width:50%;
+        height: 60vh;
+        margin-top: 10vh;
+        background-image: url("image/download.jpg");
+        background-size: 100% 100%;
+        border: none;
+        animation-name: food-img-ani;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        position: relative;
+        transition-property: all;
+        transition-duration: 3s;
+    }
+    @keyframes food-img-ani{
+        from{left:-600px;}
+        to{left:0px}
+    }
+    .foodimg:hover{
+        transform: scale(.9);
+        transition-duration: 3s;
+    }
+    .food-order{
+        width: 50%;
+        height: 60vh;
+        position:relative;
+        top:-60vh;
+        left: 50%;
+        text-align: center;
+        /* border: 1px solid gray; */
+    }
+    .food-order h1{
+        text-transform: uppercase;
+        font-size: 50px;
+        margin: 4% auto;
+        animation-name: food-juicei;
+        animation-duration: 5s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        position: relative;
+        transition-property: all;
+        transition-duration: 3s;
+    }
+    @keyframes food-juicei{
+        from{right:-600px;}
+        to{right:0px}
+    }
+    .food-order p{
+        font-family: 'Roboto Slab', serif;
+        width: 90%;
+        font-size: 18px;
+        color: #344e3e;
+        margin: 5% auto;
+        animation-name: food-p;
+        animation-duration: 5s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+        position: relative;
+        transition-property: all;
+        transition-duration: 3s;
+    }
+    @keyframes food-p{
+        from{right:-600px;}
+        to{right:0px}
+    }
+    .food-order button{
+        width: 20%;
+        height: 10%;
+        border-radius: 20px;
+        border: none;
+        outline-style: none;
+        text-transform: uppercase;
+        font-size: 17px;
+        background-image: linear-gradient(to left, teal,transparent);
+        animation-name: food-order;
+        animation-duration: 5s;
+        animation-delay: 7s;
+        animation-fill-mode: forwards;
+        position: relative;
+        transition-property: all;
+        transition-duration: 3s;
+    }
+    @keyframes food-order{
+        from{right:-600px;}
+        to{right:0px}
+    }
+    }
+    .food-order button:hover{
+        cursor: pointer;
+        background-image:linear-gradient(to right, teal,transparent);
+        color: whitesmoke;
+        box-shadow: 5px -5px 2px 3px black;
+    }
+    .food-order:hover{
+        transform: scale(.9);
+        transition-duration: 3s;
+    }
+    .products{
+        position: relative;
+        height: 130vh;
+    }
+    .products h1{
+        text-align: center;
+        margin: 6% 0%;
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+    .c1{
+        height: 260px;
+        width: 260px;
+        transition-duration: 2s;
+        float: left;
+        margin-left: 70px;
+        margin-bottom: 7%;
+        border-radius: 20px;
+        box-shadow: 5px -5px 5px 3px rgb(0, 128, 111);
+    }
+    .c1:nth-child(2){
+        background-image: url(image/im1.jpg);
+        background-size: 100% 100%;
+        transform: rotate(-10deg);
+        
+    }
+    .c1:nth-child(3){
+        background-image: url(image/im2.jpg);
+        background-size: 100% 100%;
+        transform: rotate(10deg);
+    }
+    .c1:nth-child(4){
+        background-image: url(image/im10.webp);
+        background-size: 100% 100%;
+        transform: rotate(-10deg);
+    }
+    .c1:nth-child(5){
+        background-image: url(image/im4.jpg);
+        background-size: 100% 100%;
+        transform: rotate(10deg);}
+        .c1:nth-child(6){
+            background-image: url(image/im5.jpg);
+            background-size: 100% 100%;
+            transform: rotate(-10deg);
+        }
+        .c1:nth-child(7){
+            background-image: url(image/im9.jpg);
+            background-size: 100% 100%;
+            transform: rotate(10deg);
+        }
+        .c1:nth-child(8){
+            background-image: url(image/im7.jpg);
+            background-size: 100% 100%;
+            transform: rotate(-10deg);
+        }
+        .c1:nth-child(9){
+            background-image: url(image/im8.webp);
+            background-size: 100% 100%;
+            transform: rotate(10deg);}
+            .c1:hover{
+                transform: rotate(0deg);
+                transform: scale(1.2);
+                transition-duration: 2s;
+
+            }
+            .c2:hover{
+                transform: rotate(0deg);
+                transform: scale(.9);
+                transition-duration: 2s;
+            }
+            .portfolio{
+                position: relative;
+                height: 130vh;
+                border: ipx solid aqua;
+            }
+            .portfolio h1{
+                text-align: center;
+                margin: 6% 0%;
+                font-size: 45px;
+                text-transform: uppercase;
+            }
+            .ch1{
+                height: 260px;
+                width: 260px;
+                transition-duration: 2s;
+                float: left;
+                margin-left: 70px;
+                margin-bottom: 7%;
+                border-radius: 20px;
+                box-shadow: 5px -5px 5px 3px rgb(0, 128, 111);
+            }
+            .ch1:nth-child(2){
+                background-image: url(image/ch1.webp);
+                background-size: 100% 100%;
+                transform: skewx(20deg);
+                
+            }
+            .ch1:nth-child(3){
+                background-image: url(image/ch2.webp);
+                background-size: 100% 100%;
+                transform: skewy(20deg);
+            }
+            .ch1:nth-child(4){
+                background-image: url(image/ch3.webp);
+                background-size: 100% 100%;
+                transform: scalex(20deg);
+            }
+            .ch1:nth-child(5){
+                background-image: url(image/ch4.webp);
+                background-size: 100% 100%;
+                transform: scalex(20deg);}
+                .ch1:nth-child(6){
+                    background-image: url(image/ch5.webp);
+                    background-size: 100% 100%;
+                    transform: skewx(20deg);
+                }
+                .ch1:nth-child(7){
+                    background-image: url(image/ch6.webp);
+                    background-size: 100% 100%;
+                    transform: skewy(20deg);
+                }
+                .ch1:nth-child(8){
+                    background-image: url(image/ch7.webp);
+                    background-size: 100% 100%;
+                    transform: scalex(20deg);}
+                .ch1:nth-child(9){
+                    background-image: url(image/ch8.webp);
+                    background-size: 100% 100%;
+                    transform: scalex(20deg);}
+                    .ch1:hover{
+                        transform: rotate(0deg);
+                        transform: scale(1.2);
+                        transition-duration: 2s;
+        
+                    }
+                    .ch2:hover{
+                        transform: rotate(0deg);
+                        transform: scale(.9);
+                        transition-duration: 2s;
+                    }
